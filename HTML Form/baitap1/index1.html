@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        background-color: lightskyblue;
+        width: 500px;
+        padding: 10px;
+    }
+
+    #content {
+        background-color: white;
+        padding: 5px;
+    }
+
+    h3 {
+        padding: 5px;
+        background-color: orangered;
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+
+    .col-25 {
+        padding: 6px;
+        width: 80px;
+        color: blue;
+    }
+
+    .col-75 {
+        width: 120px;
+        padding: 3px;
+    }
+
+    .input {
+        width: 350px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <h3>SỞ THÍCH CỦA BẠN</h3>
+            <form action="">
+                <table>
+                    <tr>
+                        <td class="col-25">Họ và tên</td>
+                        <td colspan="3"><input type="text" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-25">Email</td>
+                        <td colspan="3"><input type="text" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-25">Sở thích</td>
+                        <td class="col-75"><input type="checkbox" />Thể Thao</td>
+                        <td class="col-75"><input type="checkbox" />Âm nhạc</td>
+                        <td class="col-75"><input type="checkbox" />Đọc sách</td>
+                    </tr>
+                    <tr>
+                        <td class="col-25"></td>
+                        <td class="col-75"><input type="checkbox" />Lướt web</td>
+                        <td class="col-75"><input type="checkbox" />Chơi game</td>
+                        <td class="col-75"><input type="checkbox" />Điện ảnh</td>
+                    </tr>
+                    <tr>
+                        <td class="col-25"></td>
+                        <td class="col-75"><input type="checkbox" />Du lịch</td>
+                    </tr>
+                    <tr>
+                        <td class="col-25"></td>
+                        <td colspan="3">
+                            <input type="submit" value="Gửi thông tin" />
+                            <input type="reset" value="Nhập lại" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

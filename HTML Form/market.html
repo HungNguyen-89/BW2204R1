@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    .table2 {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .col1 {
+        width: 300px;
+        text-align: left;
+    }
+
+    .row1 {
+        text-align: center;
+        width: 150px;
+    }
+
+    .row1-1,
+    .row1-2 {
+        text-align: center;
+    }
+
+    .row1-1 {
+        border-bottom: none;
+    }
+
+    .row1-2 {
+        border-top: none;
+    }
+
+    .gray {
+        background-color: #e6e6e6;
+    }
+</style>
+
+<body>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr />
+    <form action="">
+        <h4>What is your age range?</h4>
+        <select name="" id="select-age">
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-50">35-50</option>
+            <option value="50+">50+</option>
+        </select>
+        <h4>What is your yearly income range?</h4>
+        <select name="" id="select-income">
+            <option value="25000">$0 - $25,000</option>
+            <option value="50000">$25,001 - $50,000</option>
+            <option value="100000">$50,001 - $100,000</option>
+            <option value="100000+">100,000+</option>
+        </select>
+        <h4>Gender Identity</h4>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br />
+        <h4>
+            Which of the following products have your purchased in the last 2
+            months. Please check all that apply.
+        </h4>
+        <input type="checkbox" value="Product1" name="product1" id="product1" />
+        <label for="product1">Product1</label><br />
+        <input type="checkbox" value="Product2" name="product2" id="product2" />
+        <label for="product2">Product2</label><br />
+        <input type="checkbox" value="Product3" name="product3" id="product3" />
+        <label for="product3">Product3</label><br />
+        <h4>How often would you use our new product?</h4>
+        <input type="checkbox" value="Daily" name="daily" id="daily" />
+        <label for="daily">Daily</label><br />
+        <input type="checkbox" value="Weekly" name="weekly" id="weekly" />
+        <label for="weekly">Weekly</label><br />
+        <input type="checkbox" value="Monthly" name="monthly" id="monthly" />
+        <label for="monthly">Monthly</label><br />
+        <h4>What would you pay for the new product?</h4>
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="number" /></td>
+                <td>.</td>
+                <td><input type="number" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td></td>
+                <td>Cents</td>
+            </tr>
+        </table>
+        <h4>What features would you like to see in the new product.</h4>
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+        <p>Please rate your level of agreement with the following statements.</p>
+        <table class="table2">
+            <tr>
+                <th class="table2 row1 gray"></th>
+                <th class="table2 row1 gray">Strongly Disagree</th>
+                <th class="table2 row1 gray">Disagree</th>
+                <th class="table2 row1 gray">Agree</th>
+                <th class="table2 row1 gray">Strongly Agree</th>
+            </tr>
+            <tr>
+                <th class="table2 col1" rowspan="2">
+                    Our products are priced fairly
+                </th>
+                <td class="table2 row1-1">
+                    <input type="radio" id="priced-fairly1" name="priced-fairly" value="priced-fairly1" />
+                </td>
+                <td class="table2 row1-1">
+                    <input type="radio" id="priced-fairly2" name="priced-fairly" value="priced-fairly2" />
+                </td>
+                <td class="table2 row1-1">
+                    <input type="radio" id="priced-fairly3" name="priced-fairly" value="priced-fairly3" />
+                </td>
+                <td class="table2 row1-1">
+                    <input type="radio" id="priced-fairly4" name="priced-fairly" value="priced-fairly4" />
+                </td>
+            </tr>
+            <tr>
+                <td class="table2 row1-2"><label for="priced-fairly1">1</label></td>
+                <td class="table2 row1-2"><label for="priced-fairly2">2</label></td>
+                <td class="table2 row1-2"><label for="priced-fairly3">3</label></td>
+                <td class="table2 row1-2"><label for="priced-fairly4">4</label></td>
+            </tr>
+            <tr>
+                <th class="table2 col1 gray" rowspan="2">Our products are high quality</th>
+                <td class="table2 row1-1 gray">
+                    <input type="radio" id="high-quality1" name="high-quality" value="high-quality1" />
+                </td>
+                <td class="table2 row1-1 gray">
+                    <input type="radio" id="high-quality2" name="high-quality" value="high-quality2" />
+                </td>
+                <td class="table2 row1-1 gray">
+                    <input type="radio" id="high-quality3" name="high-quality" value="high-quality3" />
+                </td>
+                <td class="table2 row1-1 gray">
+                    <input type="radio" id="high-quality4" name="high-quality" value="high-quality4" />
+                </td>
+            </tr>
+            <tr>
+                <td class="table2 row1-2 gray"><label for="high-quality1">1</label></td>
+                <td class="table2 row1-2 gray"><label for="high-quality2">2</label></td>
+                <td class="table2 row1-2 gray"><label for="high-quality3">3</label></td>
+                <td class="table2 row1-2 gray"><label for="high-quality4">4</label></td>
+            </tr>
+            <tr>
+                <th class="table2 col1" rowspan="2">You would recommend our product to a friend or coworker</th>
+                <td class="table2 row1-1">
+                    <input type="radio" id="coworker1" name="coworker1" value="coworker1" />
+                </td>
+                <td class="table2 row1-1">
+                    <input type="radio" id="coworker2" name="coworker" value="coworker2" />
+                </td>
+                <td class="table2 row1-1">
+                    <input type="radio" id="coworker3" name="coworker" value="coworker3" />
+                </td>
+                <td class="table2 row1-1">
+                    <input type="radio" id="coworker4" name="coworker" value="coworker4" />
+                </td>
+            </tr>
+            <tr>
+                <td class="table2 row1-2"><label for="coworker1">1</label></td>
+                <td class="table2 row1-2"><label for="coworker2">2</label></td>
+                <td class="table2 row1-2"><label for="coworker3">3</label></td>
+                <td class="table2 row1-2"><label for="coworker4">4</label></td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
